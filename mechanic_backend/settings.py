@@ -129,6 +129,9 @@ CORS_ORIGIN_WHITELIST = [
 
     "http://localhost:3000",
     "http://localhost:3001",
+    "https://meetmech.herokuapp.com",
+    "http://meetmech.herokuapp.com"
+
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
