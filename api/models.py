@@ -7,14 +7,19 @@ SERVICE_TYPES = (
     ('wiring', 'Car wiring'),
     ('tyres', 'Wheel Alignment'),
     ('electric', 'Electric Cars'),
-    ('engine', 'Engine Checking')
+    ('engine', 'Engine Checking'),
+    ('balancing', 'Wheel Balancing')
 )
 
 LOCATIONS = (
     ('kampala', 'Kampala'),
     ('kayinga', 'Kayinga'),
     ('katwe', 'Katwe'),
-    ('kakiri', 'Kakiri')
+    ('kakiri', 'Kakiri'),
+    ('Nsambya', 'Nsambya'),
+    ('Entebbe', 'Entebbe'),
+    ('Munyonyo', 'Munyonyo'),
+    ('Wandegeya', 'Wandegeya'),
 )
 
 
@@ -42,13 +47,13 @@ class Client(models.Model):
 
 class serviceProvider(models.Model):
 	service  = models.CharField(max_length=32, choices=SERVICE_TYPES, blank=True)
-	owner_username =  models.CharField(max_length=32, blank=True)
+	owner_username =  models.CharField(max_length=100, blank=True)
 	location = models.CharField(max_length=32, choices=LOCATIONS, blank=True)
-	name     = models.CharField(max_length=60, null=False ,blank=False)
+	name     = models.CharField(max_length=100, null=False ,blank=False)
 	photo = models.FileField(upload_to="media/photos/service_provider_avatars/", blank=True)
-	contact  = models.CharField(max_length=25, null=False ,blank=False)
-	email    = models.EmailField(max_length=50, null=True,blank=True)
-	other    = models.CharField(max_length=100)
+	contact  = models.CharField(max_length=105, null=False ,blank=False)
+	email    = models.EmailField(max_length=100, null=True,blank=True)
+	other    = models.CharField(max_length=10000)
 	#profile_picture = models.ImageField(blank=True, null=True, upload_to=upload_path)
 	owner    = models.ForeignKey(
 	    User, related_name="profiles", 
