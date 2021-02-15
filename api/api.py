@@ -112,7 +112,7 @@ class AutoComplete(generics.RetrieveAPIView):
 
 	def get(self, request):
 		serializer = UserSerializer(request.user, many=False)
-		suggestions = ["wiring", "electric", "tyres", "engine", "balancing"]
+		suggestions = ["Car wiring", "Wheel Alignment", "Electric Cars", "Engine Checking", "Wheel Balancing", "Flat Tyres", "Computer Aided Mechanics"]
 		return Response({
       		"suggestions": suggestions
     		})

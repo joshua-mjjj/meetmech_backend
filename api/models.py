@@ -4,22 +4,31 @@ from datetime import datetime
 
 
 SERVICE_TYPES = (
-    ('wiring', 'Car wiring'),
-    ('tyres', 'Wheel Alignment'),
-    ('electric', 'Electric Cars'),
-    ('engine', 'Engine Checking'),
-    ('balancing', 'Wheel Balancing')
+    ('Car wiring', 'Car wiring'),
+    ('Wheel Alignment', 'Wheel Alignment'),
+    ('Electric Cars', 'Electric Cars'),
+    ('Engine Checking', 'Engine Checking'),
+    ('Wheel Balancing', 'Wheel Balancing'),
+    ('Flat Tyres', 'Flat Tyres'),
+    ('Computer Aided Mechanics', 'Computer Aided Mechanics'),
+
 )
 
 LOCATIONS = (
     ('kampala', 'Kampala'),
     ('kayinga', 'Kayinga'),
-    ('katwe', 'Katwe'),
     ('kakiri', 'Kakiri'),
     ('Nsambya', 'Nsambya'),
     ('Entebbe', 'Entebbe'),
     ('Munyonyo', 'Munyonyo'),
-    ('Wandegeya', 'Wandegeya'),
+    ('Kiboga', 'Kiboga'),
+    ('Mityana', 'Mityana'),
+    ('Lugazi', 'Lugazi'),
+    ('Kamuli', 'Kamuli'),
+    ('Iganga', 'Iganga'),
+    ('Kitgum', 'Kitgum'),
+    ('Mbarara', 'Mbarara'),
+    ('Gulu', 'Gulu'),
 )
 
 
