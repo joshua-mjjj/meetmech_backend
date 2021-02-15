@@ -4,13 +4,13 @@ from datetime import datetime
 
 
 SERVICE_TYPES = (
-    ('Car wiring', 'Car wiring'),
-    ('Wheel Alignment', 'Wheel Alignment'),
-    ('Electric Cars', 'Electric Cars'),
-    ('Engine Checking', 'Engine Checking'),
-    ('Wheel Balancing', 'Wheel Balancing'),
-    ('Flat Tyres', 'Flat Tyres'),
-    ('Computer Aided Mechanics', 'Computer Aided Mechanics'),
+    ('wiring', 'Car wiring'),
+    ('alignment', 'Wheel Alignment'),
+    ('electrics', 'Electric Cars'),
+    ('engines', 'Engine Checking'),
+    ('wheel_balancing', 'Wheel Balancing'),
+    ('flat_tyres', 'Flat Tyres'),
+    ('computer_aided_mechanics', 'Computer Aided Mechanics'),
 
 )
 

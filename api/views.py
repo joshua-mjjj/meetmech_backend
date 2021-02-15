@@ -15,6 +15,8 @@ def UsersCreate(request):
 		serializer.save()
 		serv    = request.data['service']
 		loca    = request.data['Location']
+		print(serv)
+		print(loca)
 		serv = serv.lower()
 		queryset = serviceProvider.objects.filter(location=loca, service=serv)
 		
